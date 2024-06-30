@@ -3,10 +3,10 @@ from django.db import models
 
 
 class User(AbstractUser):
-    role = models.CharField(max_length=50)
-    tel = models.CharField(max_length=15, blank=True, null=True)
+    password = models.CharField(max_length=50, blank=True)
+    password2 = models.CharField(max_length=50, blank=True)
 
-    REQUIRED_FIELDS = ['role', 'email', 'tel']
+    REQUIRED_FIELDS = ['password', 'password2']
 
     def __str__(self):
         return self.username

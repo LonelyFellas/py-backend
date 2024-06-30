@@ -1,6 +1,10 @@
 .venv
 .vscode
-.idea
+.idea/*
+*.iml
+*.xml
+__pycache__
+venv
 # Logs
 logs
 *.log
